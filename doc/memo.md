@@ -1,0 +1,33 @@
+# メモ
+
+- tsc ファイル名でコンパイルできる
+- メリット
+  - ドキュメントとして
+    - 
+  - linterとして
+  - ES5へのコンパイル(トランスパイル)
+- anyは使わない方が良い
+  - stringにした変数にもany入っちゃう
+- classは型としても使用できる
+- シングルトンパターン
+  - constructorをprivateにして外から呼べないようにする
+  - staticメソッドでconstructorを呼ぶ
+  - staticなプロパティにインスタンスをいれる
+  - 次回以降インスタンス化を試みたら、上記プロパティを確認
+  - インスタンスがすでにあればそれを返す
+- 型アサーション
+  - 戻り値の値が正確ではない場合、(string or numberなど)に
+  - as stringなどとやって型をdeveloperが決める仕組み
+- 関数のオーバーロード
+- optional chainnig user?.name?.firstname
+  - userがnull or undifinedならそれを、そうでなければプロパティを返す
+- Nullish Coalescing
+  - ??
+- ジェネリクス
+  - 型を引数として受け取る
+  - extendsを使用して、型を絞ることができる
+- keyof演算子というものがある
+- デコレータ
+  - classに使用する関数
+    - classの上の行に@関数名と書く
+- classはconstuctorのシンタックスシュガー
